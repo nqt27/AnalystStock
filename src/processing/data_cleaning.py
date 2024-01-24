@@ -13,10 +13,10 @@ print(df.head())
 
 
 # Kết nối đến SQLite
-conn = sqlite3.connect('stock_data.db')
+conn = sqlite3.connect('../../database/StockAnalyst.db')
 
 # Tạo bảng nếu chưa tồn tại
-df.to_sql('stock_data', conn, if_exists='replace')
+df.to_sql('stock_ibm', conn, if_exists='replace')
 
 # Lưu các thay đổi và đóng kết nối
 conn.commit()
