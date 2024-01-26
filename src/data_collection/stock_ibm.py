@@ -25,7 +25,7 @@ if response.status_code == 200:
     df.index = pd.to_datetime(df.index)
 
     # Lưu dữ liệu vào tệp CSV
-    df.to_csv(f"../../data/raw_data/stock_{symbol.lower()}.csv")
+    df.to_csv(f"data/raw_data/stock_{symbol.lower()}.csv")
     print(f"Dữ liệu đã được lưu vào stock_{symbol.lower()}.csv")
 
 else:
